@@ -156,75 +156,6 @@ class PdoGsb
 
     }
 
-    function getTab2($debut,$nb_case,$keyword,$menu,$date_debut,$date_fin,$tridate,$triaz){
-
-        $tab= array();
-        $tab2=array();
-        $tab3=array();
-        $tab_keyword = explode(" ", $keyword);
-
-        $req = "SELECT * FROM jnl";
-        $rs = PdoGsb::$monPdo->query($req);
-        $getTab = $rs->fetchAll();
-
-        foreach ($getTab as $item) { //parcour chaque ligne tu tableau getTab
-            if(stristr($item['pleintext'], $keyword)){ // si le mot clé ce trouve dans getTab push
-                array_push($tab,$item['id']);
-
-            }
-        }
-
-    if(count($tab_keyword)>1) {//si tableau contient plusieurs mots clé
-        $test =0;
-        foreach ($getTab as $item) {
-            foreach ($tab_keyword as $item2) {//parcour pour chaque mot clé du tableau
-
-                if (!stristr($item['pleintext'], $item2)) {
-                    $test++;
-                }
-            }
-            if ($test == count($tab_keyword)) {
-                array_push($tab2, $item['id']);
-            }
-        }
-
-
-        foreach ($getTab as $item) {
-            foreach ($tab_keyword as $item2) {//parcour pour chaque mot clé du tableau
-
-                if (!stristr($item['pleintext'], $item2)) {
-                    array_push($tab3, $item['id']);
-                }
-            }
-
-        }
-
-        foreach ($tab2 as $item){
-            $test = true;
-            foreach ($tab as $item2){
-                if($item == $item2){
-                    $test = false;
-                }
-            }
-            if($test){
-                array_push($tab, $item);
-            }
-        }
-
-        foreach ($tab3 as $item){
-            $test = true;
-            foreach ($tab as $item2){
-                if($item == $item2){
-                    $test = false;
-                }
-            }
-            if($test){
-                array_push($tab, $item);
-            }
-        }
-    }
-        return $tab;
-    }
 
     function count_menu($tableau,$option){
         foreach ($tableau as $i){
@@ -243,6 +174,14 @@ class PdoGsb
             return 0;
         }
         return $getTab['code'];
+
+    }
+
+    function modallong($id){
+        $req = "SELECT titre,pleintext FROM jnl WHERE id =".$id;
+        $rs = PdoGsb::$monPdo->query($req);
+        $getTab = $rs->fetch();
+        return $getTab;
 
     }
 
@@ -290,10 +229,39 @@ function menu($tab,$nb){
 
 
 
+// "<mark id='1'>" . $item . "</mark>"
+function get_Pos_chaine($key,$chaine,$a,$b,$c){
+    $table_key = explode(" ", $key);
+    $chaine = " ".$chaine;
+    $i = 1;
+    $n_chaine = $chaine ;
+    do {
+        $pp = strpos(strtolower ($chaine),strtolower($key));
+        $tk = strlen($key);
+        $mot = $key;
+        foreach ($table_key as $item){
+            if($pp == strpos(strtolower ($chaine),strtolower($item)) AND $tk < strlen($item) AND $pp !== false){
+                $tk = strlen($item);
+                $mot = $item;
+            }else if($pp > strpos(strtolower ($chaine),strtolower($item)) XOR $pp == false){
+                $pp = strpos(strtolower ($chaine),strtolower($item));
+                $tk = strlen($item);
+                $mot = $item;
+            }
 
+        }
+        $ch = "";
+        if($pp!==false){
+            for($i2=strlen($a.$i.$b.$mot.$c);$i2>0;$i2--){
+                $ch = $ch."*";
+            }
 
+            $n_chaine = substr_replace($n_chaine,$a.$i.$b.$mot.$c,$pp, strlen($mot));
+            $chaine = substr_replace($chaine, $ch, $pp, strlen($mot));
+            $i++;
+        }
+    }while($pp!==false);
 
+    return $n_chaine;
 
-
-
-
+}

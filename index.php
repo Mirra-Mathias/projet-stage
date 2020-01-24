@@ -1,4 +1,3 @@
-<! -- $_GET['nb'] nombre de case $_GET['page'] page sélectioné  $_GET['menu'] édition sélectioné  -->
 
 <!doctype html>
 <html lang="fr">
@@ -9,7 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/sort.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <link href="css/modallong.css" rel="stylesheet" type="text/css">
+
 
 
 </head>
@@ -20,13 +22,15 @@ session_start();
 require_once("include/inc.php");
 $pdo = PdoGsb::getPdoGsb();
 
+
 if(isset($_GET['loading']) && $_GET['loading'] == "on") {
     echo "
         <div style=\"position:relative; top: 350px;\" class='text-center'>
         <div class=\"spinner-grow text-info\" style=\"width: 3rem; height: 3rem;\" role=\"status\">
         <span class=\"sr-only\">Loading...</span>
         </div></div>
-        <script>includeGET('loading=off')
+        <script>
+        includeGET('loading=off')
         </script>
         ";
 
@@ -83,7 +87,7 @@ if(!isset($_GET['loading'])||$_GET['loading']=="off"){
 ?>
     <i class="fas fa-search" aria-hidden="true"></i>
     <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-           aria-label="Search"id="keyword" <?php echo isset($_GET['keyword']) && strlen($_GET['keyword']) > 0 ? 'value="'. str_replace('"', '', $_GET['keyword']).'"' : null;?>>
+           aria-label="Search" id="keyword" <?php echo isset($_GET['keyword']) && strlen($_GET['keyword']) > 0 ? 'value="'. str_replace('"', '', $_GET['keyword']).'"' : null;?>>
 <br>
 <script>
     var input = document.getElementById("keyword");
@@ -288,6 +292,7 @@ if(!isset($_GET['loading'])||$_GET['loading']=="off"){
 
 
 
-
 </body>
+
+
 </html>

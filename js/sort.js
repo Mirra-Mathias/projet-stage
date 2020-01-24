@@ -13,6 +13,25 @@ function $_GET(param) {
     return vars;
 }
 
+function getXMLHttpRequest() {
+    var xhr = null;
+    if (window.XMLHttpRequest || window.ActiveXObject) {
+        if (window.ActiveXObject) {
+            try {
+                xhr = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        } else {
+            xhr = new XMLHttpRequest();
+        }
+    } else {
+        alert("Votre navigateur ne supporte pas l'objet XMLHTTPRequest...");
+        return null;
+    }
+
+    return xhr;
+}
 
 function includeGET(get){
     var n = window.location.search.split('&');
@@ -132,55 +151,80 @@ function gen_menu(tbutton,tbutton2,tbutton3,tbutton4) {
 }
 
 function recherche_date(){
-
     includeGET("date_debut="+document.getElementById("date_debut").value+"&date_fin="+document.getElementById("date_fin").value+"&loading=on");
 }
 
 function get_Modallong(id) {
-    var id2 = parseFloat(id);
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4){
+            if (xhr.status == 200 ||xhr.status == 0){
+                if (xhr.responseText == "") {
+                }
+                else
+                {
+                    location.href = "#0";
+                    $.confirm({
+                        columnClass: 'col-md-4 col-md-offset-8 col-xs-4 col-xs-offset-8',
+                        containerFluid: true,
+                        title: xhr.responseText.split('*/$~§')[0]+"<br><br><p>Occurence :"+xhr.responseText.split('*/$~§')[2]+"</p>",
+                        content: xhr.responseText.split('*/$~§')[1],
+                        buttons: {
+                            form1:{
+                                text: '⬆',
+                                action: function(){
+                                    var i = location.href;
+                                    i  = i.split('#')[1];
+                                    i--;
+                                    if(document.getElementById(i)){
+                                        location.href = "#"+i;
+                                    }
+                                    return false ;
+                                }
+                            },
+                            form2:{
+                                text: '⬇',
+                                action: function(){
+                                    var i = location.href;
+                                    i  = i.split('#')[1];
+                                    i++;
+                                    if(document.getElementById(i)){
+                                        location.href = "#"+i;
+                                    }else{
+                                        location.href = "#0";
+                                    }
+                                    return false ;
+                                }
+                            },
+                            formSubmit: {
+                                text: 'OUVRIR',
+                                btnClass: 'btn-blue',
+                                action: function () {
+                                }
+                            },
 
+                            FERMER : function () {
 
-    swal({
-        text: document.getElementById(id).name,
-        content: "input",
-        button: {
-            text: "Search!",
-            closeModal: false,
-        },
-    })
-        .then(name => {
-            if (!name) throw null;
+                            },
+                        },
+                        onContentReady: function () {
+                            // bind to events
+                            var jc = this;
+                            this.$content.find('form').on('submit', function (e) {
+                                // if the user submits the form by pressing enter in the field.
+                                e.preventDefault();
+                                jc.$$formSubmit.trigger('click'); // reference the button and click it
+                            });
+                        }
+                    });
+                }
 
-            return fetch(``);
-        })
-        .then(results => {
-            return results.json();
-        })
-        .then(json => {
-            const movie = json.results[0];
-
-            if (!movie) {
-                return swal("No movie was found!");
             }
-
-            const name = movie.trackName;
-            const imageURL = movie.artworkUrl100;
-
-            swal({
-                title: "Top result:",
-                text: name,
-                icon: imageURL,
-            });
-        })
-        .catch(err => {
-
-            if (err) {
-                swal("Oh noes!", "The AJAX request failed!", "error");
-            } else {
-                swal.stopLoading();
-                swal.close();
-            }
-        });
-
+            if (xhr.status==404) alert("404");
+            if (xhr.status==500) alert("500");
+        }
+    }
+    xhr.open("GET", "controleur/c_get-text.php?id="+id+"&keyword="+$_GET("keyword"), true);
+    xhr.send();
 }
 

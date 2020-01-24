@@ -5,7 +5,7 @@
                                      <p class="card-text"><?php echo $tab[$i]['titre'];?> </p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                 <button type="button" class="btn btn-sm btn-outline-primary" onclick="window.open('<?php echo $tab[$i]['mbrowse']."/".$tab[$i]['fichier'];?>')">PDF</button>
+                                                 <button type="button" class="btn btn-sm btn-outline-primary" onclick="window.open('<?php echo "http://www.saint-junien.fr/wp-content/themes/dt-the7-child/pdf/".$tab[$i]['fichier'];?>')">PDF</button>
                                                 <button class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#exampleModalLong" id="visualiser" onclick="get_Modallong(<?php echo $tab[$i]['id'];?>)"> visualiser</button>
                                             </div>
                                                 <small class="text-muted"><?php echo $tab[$i]['dtjournal'];?></small>

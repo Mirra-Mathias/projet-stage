@@ -122,7 +122,12 @@
       <workItem from="1579089963087" duration="9008000" />
       <workItem from="1579160237706" duration="10506000" />
       <workItem from="1579176900004" duration="7541000" />
+<<<<<<< HEAD
+      <workItem from="1579246658715" duration="6624000" />
+      <workItem from="1579253854780" duration="564000" />
+=======
       <workItem from="1579246658715" duration="6144000" />
+>>>>>>> d4f43c04aecbae457bd9e9fed41bc594cca35672
     </task>
     <servers />
   </component>
@@ -130,6 +135,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
+    <state x="552" y="179" key="#Notifications" timestamp="1579254211336">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1579254211336" />
+=======
+>>>>>>> d4f43c04aecbae457bd9e9fed41bc594cca35672
     <state x="667" y="111" key="#PHP" timestamp="1578304089660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -154,10 +166,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="209" key="#php/0.0.1920.1040@0.0.1920.1040" timestamp="1578303831084" />
+<<<<<<< HEAD
+    <state x="345" y="181" key="FileChooserDialogImpl" timestamp="1579253463568">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="345" y="181" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579253463568" />
+=======
     <state x="345" y="181" key="FileChooserDialogImpl" timestamp="1578669672080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="345" y="181" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578669672080" />
+>>>>>>> d4f43c04aecbae457bd9e9fed41bc594cca35672
     <state width="1877" height="367" key="GridCell.Tab.0.bottom" timestamp="1579172412745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -210,10 +229,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="570" y="116" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579171427594" />
+<<<<<<< HEAD
+    <state x="42" y="168" key="SettingsEditor" timestamp="1579253548324">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="42" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579253548324" />
+=======
     <state x="42" y="168" key="SettingsEditor" timestamp="1579253085777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="42" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579253085777" />
+>>>>>>> d4f43c04aecbae457bd9e9fed41bc594cca35672
     <state width="498" height="446" key="SwitcherDM" timestamp="1579079219091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
