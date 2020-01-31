@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29ad5ae1-cd04-4507-b41d-423dd4889ba1" name="Default Changelist" comment="" />
+    <list default="true" id="29ad5ae1-cd04-4507-b41d-423dd4889ba1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Archives_SDL_Public.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controleur/c_get-text.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controleur/c_loading_on.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/fonctions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/min_fonctions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vues/vue_loading.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vues/vue_pied_menu_pages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vues/vue_recherche_bar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vues/vue_recherche_date.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/pdo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fonctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_Modallong.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_affiche.php" beforeDir="false" afterPath="$PROJECT_DIR$/vues/vue_affiche.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,8 +48,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,16 +71,21 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jnl.sql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projet-stage" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\UwAmp\www\projet\vues" />
       <recent name="C:\UwAmp\www\projet" />
       <recent name="C:\UwAmp\www\projet\js" />
       <recent name="C:\UwAmp\www\projet\ressources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\UwAmp\www\projet-stage" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.php">
@@ -122,12 +145,32 @@
       <workItem from="1579089963087" duration="9008000" />
       <workItem from="1579160237706" duration="10506000" />
       <workItem from="1579176900004" duration="7541000" />
-<<<<<<< HEAD
       <workItem from="1579246658715" duration="6624000" />
-      <workItem from="1579253854780" duration="564000" />
-=======
-      <workItem from="1579246658715" duration="6144000" />
->>>>>>> d4f43c04aecbae457bd9e9fed41bc594cca35672
+      <workItem from="1579253854780" duration="11181000" />
+      <workItem from="1579505918596" duration="19418000" />
+      <workItem from="1579592483004" duration="11948000" />
+      <workItem from="1579609452760" duration="9785000" />
+      <workItem from="1579620013008" duration="929000" />
+      <workItem from="1579678569622" duration="20613000" />
+      <workItem from="1579765541861" duration="10152000" />
+      <workItem from="1579781514520" duration="8764000" />
+      <workItem from="1579851453225" duration="9824000" />
+      <workItem from="1579867417714" duration="8742000" />
+      <workItem from="1580111001449" duration="10206000" />
+      <workItem from="1580127414567" duration="11327000" />
+      <workItem from="1580196677458" duration="260000" />
+      <workItem from="1580197226957" duration="181000" />
+      <workItem from="1580197647676" duration="8266000" />
+      <workItem from="1580213248060" duration="10480000" />
+      <workItem from="1580283434854" duration="7320000" />
+      <workItem from="1580290902374" duration="98000" />
+      <workItem from="1580291022579" duration="3903000" />
+      <workItem from="1580299742485" duration="9615000" />
+      <workItem from="1580371315083" duration="7089000" />
+      <workItem from="1580386563448" duration="8702000" />
+      <workItem from="1580456785969" duration="2747000" />
+      <workItem from="1580463036343" duration="3818000" />
+      <workItem from="1580474111997" duration="1089000" />
     </task>
     <servers />
   </component>
@@ -135,17 +178,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-<<<<<<< HEAD
-    <state x="552" y="179" key="#Notifications" timestamp="1579254211336">
+    <state x="552" y="179" key="#Notifications" timestamp="1579265973416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1579254211336" />
-=======
->>>>>>> d4f43c04aecbae457bd9e9fed41bc594cca35672
-    <state x="667" y="111" key="#PHP" timestamp="1578304089660">
+    <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1579265973416" />
+    <state x="667" y="111" key="#PHP" timestamp="1580138662008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="111" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1578304089660" />
+    <state x="667" y="111" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1580138662008" />
     <state x="828" y="351" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579166135206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -166,17 +206,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="209" key="#php/0.0.1920.1040@0.0.1920.1040" timestamp="1578303831084" />
-<<<<<<< HEAD
-    <state x="345" y="181" key="FileChooserDialogImpl" timestamp="1579253463568">
+    <state x="345" y="181" key="FileChooserDialogImpl" timestamp="1579594758924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="345" y="181" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579253463568" />
-=======
-    <state x="345" y="181" key="FileChooserDialogImpl" timestamp="1578669672080">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="345" y="181" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578669672080" />
->>>>>>> d4f43c04aecbae457bd9e9fed41bc594cca35672
+    <state x="345" y="181" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579594758924" />
     <state width="1877" height="367" key="GridCell.Tab.0.bottom" timestamp="1579172412745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -225,32 +258,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="367" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579172412746" />
-    <state x="570" y="116" key="NewPhpFileDialog" timestamp="1579171427594">
+    <state x="570" y="116" key="NewPhpFileDialog" timestamp="1580219118414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="570" y="116" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579171427594" />
-<<<<<<< HEAD
-    <state x="42" y="168" key="SettingsEditor" timestamp="1579253548324">
+    <state x="570" y="116" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580219118414" />
+    <state x="42" y="168" key="SettingsEditor" timestamp="1579265964379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="42" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579253548324" />
-=======
-    <state x="42" y="168" key="SettingsEditor" timestamp="1579253085777">
+    <state x="42" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579265964379" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1579689923775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="42" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579253085777" />
->>>>>>> d4f43c04aecbae457bd9e9fed41bc594cca35672
-    <state width="498" height="446" key="SwitcherDM" timestamp="1579079219091">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1579079219091" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1579689923775" />
     <state x="667" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1578471121890">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578471121890" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1579166174803">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1579770291178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579166174803" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579770291178" />
   </component>
 </project>
